@@ -13,9 +13,22 @@ Para ello se realizarán ttest, se buscará el valor de la varianza, que ayudara
 
 Los datasets a utilizar son los siguientes:
 
-calls_info = pd.read_csv("/datasets/megaline_calls.csv")
-internet_info = pd.read_csv("/datasets/megaline_internet.csv")
-message_info = pd.read_csv("/datasets/megaline_messages.csv")
+#### calls_info = pd.read_csv("/datasets/megaline_calls.csv")
+* id         identificación de llamada 
+* user_id    Número de usuario 
+* call_date  Fecha de la llamada 
+* duration   Duración de la llamda
+
+#### internet_info = pd.read_csv("/datasets/megaline_internet.csv")
+*id            identificación de conexión
+*user_id       Número de usuario  
+*session_date  Fecha de conexión
+*mb_used       Megas utilizados
+
+#### message_info = pd.read_csv("/datasets/megaline_messages.csv")
+* id            Identificación del mesaje
+* user_id       Número de usario 
+* message_date  Fecha del mensaje
 
 #### plans_info = pd.read_csv("/datasets/megaline_plans.csv")
 * messages_included      Mensajes incluidos 
@@ -28,3 +41,11 @@ message_info = pd.read_csv("/datasets/megaline_messages.csv")
 * plan_name              Nombre del plan
 
 #### users_info = pd.read_csv("/datasets/megaline_users.csv")
+* user_id     Número de usuario
+* first_name  Primer nombre
+* last_name   Primer apellido
+* age         Edad
+* city        Ciudad
+* reg_date    Fecha de registro
+* plan        Plan registrado
+* churn_date  Fecha de desafiliación del plan
